@@ -48,7 +48,6 @@ class ValueIterationAgent(ValueEstimationAgent):
         for i in range(self.iterations):
 			temp_values = self.values.copy()
 			for state in self.mdp.getStates():
-				#!!!!!!!!!!!!!!!!!!!!!!!!!!!
 				if self.mdp.isTerminal(state):
 					temp_values[state] = 0
 				else:

@@ -53,7 +53,8 @@ class QLearningAgent(ReinforcementAgent):
         """
         "*** YOUR CODE HERE ***"
         if (state, action) not in self.Q_values:
-            self.Q_values[(state, action)] = 0.0
+            return 0.0
+            
         return self.Q_values[(state, action)]
         
 
